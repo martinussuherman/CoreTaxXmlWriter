@@ -2,7 +2,19 @@ namespace CoreTaxXmlWriter.Models;
 
 public class TaxInvoice
 {
-    public DateOnly TaxInvoiceDate { get; set; }
+    public DateTime Date { get; set; }
+
+    public string TaxInvoiceDate
+    {
+        get
+        {
+            return Date.ToString("yyyy-MM-dd");
+        }
+        set
+        {
+            throw new NotSupportedException();
+        }
+    }
 
     public string TaxInvoiceOpt { get; set; } = string.Empty;
 
