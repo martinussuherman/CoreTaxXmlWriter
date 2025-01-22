@@ -1,7 +1,10 @@
+using System.Xml.Serialization;
+
 namespace CoreTaxXmlWriter.Models;
 
 public class TaxInvoice
 {
+    [XmlIgnore]
     public DateTime Date { get; set; }
 
     public string TaxInvoiceDate
