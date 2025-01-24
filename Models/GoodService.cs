@@ -12,7 +12,7 @@ public class GoodService
 
 	public decimal Price { get; set; }
 
-	public ulong Qty { get; set; }
+	public decimal Qty { get; set; }
 
 	public decimal TotalDiscount { get; set; }
 
